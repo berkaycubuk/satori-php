@@ -12,6 +12,8 @@
 
     const html = fs.readFileSync(htmlFilePath, { encoding:'utf8', flag:'r' });
 
+    console.log(parse(html))
+
     const svg = await satori(
         parse(html),
         {
